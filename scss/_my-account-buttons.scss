@@ -1,0 +1,104 @@
+.button, [type=button], [type=reset], [type=submit], a.button, button {
+    -webkit-appearance: none;
+    display: inline-block;
+    border: 1px solid $color-button;
+    border-radius: 0px;
+    background: $color-button;
+    color: $color-white;
+    font-weight: 600;
+    font-family: -apple-system,BlinkMacSystemFont,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: 1em;
+    text-transform: none;
+    padding: 15px;
+    margin: 0 0 .5em;
+    vertical-align: middle;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    line-height: 1;
+    outline: none;
+    &:hover {
+    	background: lighten( $color-button, 10% );
+   		border-color: lighten( $color-button, 10% );
+    }
+}
+
+
+.secondary-button, a.secondary-button, {
+	-webkit-appearance: none;
+    display: inline-block;
+    border: 1px solid $color-button;
+    border-radius: 0px;
+    background: $color-white;
+    color: $color-button;
+    font-weight: 600;
+    font-family: -apple-system,BlinkMacSystemFont,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: 1em;
+    text-transform: none;
+    padding: 15px;
+    margin: 0 0 .5em;
+    vertical-align: middle;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    line-height: 1;
+    &:hover {
+    	background: lighten( $color-button, 50% );
+    }
+}
+
+
+.disabled-button, a.disabled-button, {
+	-webkit-appearance: none;
+    display: inline-block;
+    border: 1px solid $color-disabled-button;
+    border-radius: 0px;
+    background: $color-disabled-button;
+    opacity: .4;
+    color: darken( $color-disabled-button, 50% );
+    font-weight: 600;
+    font-family: -apple-system,BlinkMacSystemFont,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: 1em;
+    text-transform: none;
+    padding: 15px;
+    margin: 0 0 .5em;
+    vertical-align: middle;
+    text-align: center;
+    cursor: not-allowed;
+    text-decoration: none;
+    line-height: 1;
+    &:hover {
+    	background: $color-disabled-button;
+    	border: 1px solid $color-disabled-button;
+        color: darken( $color-disabled-button, 50% );
+    }
+}
+
+
+.full-button {
+	display: block;
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+
+.group-button-container {
+	display: flex;
+	justify-content: space-between;
+	.button, [type=button], [type=reset], [type=submit], a.button, button {
+		flex-grow: 0;
+		flex-shrink: 0;
+  		flex-basis: 49%;
+	}
+}
+
+
+a {
+    text-decoration: none;
+    color: $color-link;
+    &:hover {
+        color: lighten( $color-link, 10% );
+    }
+}
+
+

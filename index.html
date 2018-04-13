@@ -1,0 +1,579 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!-- CSS -->
+		<link rel="stylesheet" href="dist/css/normalize.css">
+		<!-- PRISIM -->
+		<link rel="stylesheet" href="dist/css/prism.css">
+		<link rel="stylesheet" href="dist/css/my-account.css">
+
+
+
+		<!-- jQuery -->
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		 <!-- js -->
+		<script src="dist/js/stickynav.js"></script>
+		<script src="dist/js/form_passwordShowhide.js"></script>
+		
+		<!-- Font Awesome -->
+		<script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+
+		<!-- GOOGLE FONTS -->
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:700,800,900" rel="stylesheet">
+
+
+
+		<title>myAccount - SG</title>
+	</head>
+	<body>
+
+		<header class="text-center vertical-center">
+			<div class="small-container">
+				<h1>myAccount - SG</h1>
+				<p>myAccount - SG is a minimalist Style Guide that provides consistent Styling and Markup documentation for the MY ACCOUNT reusable component</p>    
+			</div>
+		</header>
+
+		<section class="download-section">
+			<div class="downloads small-container">
+				<h2>Download</h2>
+				<img src="dist/img/sass.png"/>
+				<p><a href="">Download</a> the source files and set up your Sass workflow.</p> 
+			</div>
+		</section>
+
+		<section class="container">
+				<div class="flex-container">
+
+<!-- NAV -->
+					<aside>
+						<h2>myAccount - SG</h2>
+						<div class="toggle-nav"></div>
+						<nav>
+							<ul class="fa-ul">
+								<li><a href="#buttons"><span class="fa-li"><i class="fas fa-hand-point-up"></i></span>Buttons</a></li>
+								<li><a href="#forms"><span class="fa-li"><i class="fas fa-check-square"></i></span>Forms</a></li>
+							</ul>
+						</nav>
+
+					</aside>
+<!-- NAV-END ////////////-->
+
+
+<!-- CONTENT -->
+					<main class="content">
+						<div class="medium-container">
+
+<!--********* BUTTONS -->
+							<section id="buttons">
+								<article>
+									<h2>Buttons</h2>
+									<p>Button elements, links with a <code>button</code> class, and input elements should all render exactly the same.</p>
+
+<pre class=" language-html"><code class=" language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span><span class="token punctuation">&gt;</span></span>Button<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>submit<span class="token punctuation">"</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Submit<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Input<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Link<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span></code></pre>
+
+							<button>Button</button>
+							<input type="submit" value="Submit">
+							<input type="button" value="Input">
+							<a class="button">Link</a>
+						</article>
+
+<!--********* BUTTON : SECONDARY -->
+						<article>
+							<h2>Secondary Buttons</h2>
+							<p>Adding a <code>secondary-button</code> class will display a secondary color.</p>
+
+<pre class=" language-html"><code class=" language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>secondary-button<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Button<span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>submit<span class="token punctuation">"</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Submit<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>secondary-button<span class="token punctuation">"</span><span class="token punctuation">&gt;</span></span>	q
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Input<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>secondary-button<span class="token punctuation">"</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>button secondary-button<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span></span>Link<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></code></pre>
+
+							<button class="secondary-button">Button</button>
+							<input type="submit" value="Submit" class="secondary-button">
+							<input type="button" value="Input" class="secondary-button">
+							<a class="button secondary-button">Link</a>
+						</article>
+
+<!--********* BUTTON : DISABLED -->
+						<article>
+							<h2>Disabled Buttons</h2>
+							<p>Adding a <code>disabled-button</code> class will create full-width, block level buttons. Button styles can be combined.</p>
+
+<pre class=" language-html"><code class=" language-html"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>disabled-button<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span>Button<span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>submit<span class="token punctuation">"</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Submit<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>disabled-button<span class="token punctuation">"</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Input<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>disabled-button<span class="token punctuation">"</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>button disabled-button<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span></span>Link<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span></code></pre>
+
+</code></pre>
+
+							<button class="disabled-button">Button</button>
+							<input type="submit" value="Submit" class="disabled-button">
+							<input type="button" value="Input" class="disabled-button">
+							<a class="button disabled-button">Link</a>
+						</article>
+
+<!--********* BUTTON : FULL WIDTH -->
+						<article>
+							<h2>Full Width Buttons</h2>
+							<p>Adding a <code>full-button</code> class will create full-width, block level buttons. Button styles can be combined.</p>
+
+<pre class=" language-html"><code class=" language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>full-button<span class="token punctuation">"</span></span><span class="token punctuation">&gt;<span class="token punctuation"></span></span></span>Button<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>submit<span class="token punctuation">"</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Submit<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>full-button<span class="token punctuation">"</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Input<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>full-button<span class="token punctuation">"</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>button full-button<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span></span></span>Link<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span></code></pre>
+
+
+							<button class="full-button">Button</button>
+							<input type="submit" value="Submit" class="full-button">
+							<input type="button" value="Input" class="full-button">
+							<a class="button full-button">Link</a>
+						</article>
+
+<!--********* BUTTON : GROUP Buttons -->
+						<article>
+							<h2>Group Buttons</h2>
+							<p>Adding a <code>group-button-container</code> class to a containing <code>div</code> will allow 2 buttons to sit next to each other.</p>
+
+<pre class=" language-html"><code class=" language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>group-button-container<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>secondary-button<span class="token punctuation">"</span></span><span class="token punctuation">&gt;<span class="token punctuation"></span></span></span></span>Button<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span></span><span class="token punctuation">&gt;<span class="token punctuation"></span></span></span></span>Button<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
+
+							<div class="group-button-container">
+								<button class="secondary-button">Button</button>
+								<button>Button</button>
+							</div>
+						</article>
+
+					</section>
+<!--********* BUTTONS-END ////////////-->
+
+<hr></hr>
+
+<!--********* FORMS -->
+							<section id="forms">
+								<article>
+									<h2>Forms</h2>
+									<p>Default forms will have full-width, block level labels, inputs, selects, and textareas.</p>
+
+<pre class=" language-html"><code class=" language-html"><span class="token tag"><span class="token punctuation">&lt;</span>form</span></span><span class="token punctuation">&gt;</span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>form-group<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span>
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label <span class="token attr-name">for</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span></span></span>First Name<span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">&gt;</span></span>
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>text<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span>
+
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>myAccount-form-checkbox<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span></span></span></span></span>Remember Username
+			<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>checkbox<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span></span><span class="token pu nctuation">"</span><span class="token punctuation">"</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span> </span><span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span><span class="token punctuation">&gt;</span>
+			<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>myAccount-checkmark<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span></span></span></span></span><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+		<span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">&gt;</span></span>
+
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label <span class="token attr-name">for</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span></span>Select<span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">&gt;</span>
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>select <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span>
+			<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>option-1<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span></span></span></span></span>Option 1<span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">&gt;</span></span>
+			<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>option-2<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span></span></span></span></span>Option 2<span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">&gt;</span></span>
+		<span class="token tag"><span class="token punctuation">&lt;/</span>select</span><span class="token punctuation">&gt;</span></span>
+
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label <span class="token attr-name">for</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span></span>Password<span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">&gt;</span>
+		<span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>myAccount-password<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span>
+			<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>password<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>input-myAccount-password<span class="token punctuation">"</span></span> <span class="token attr-name">password-shown</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>false<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span>
+			<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>secondary-button<span class="token punctuation">"</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span></span><span class="token punctuation">&gt;<span class="token punctuation"></span></span></span></span></span>Show<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+			<span class="token tag"><span class="token punctuation">&lt;</span>small</span><span class="token punctuation">&gt;</span><span class="token tag"><span class="token punctuation">&lt;</span>a</span><span class="token attr-name"> href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span>Forgot username or Password?<span class="token tag"><span class="token punctuation">&lt;/</span>a<span class="token punctuation">&gt;</span><span class="token tag"><span class="token punctuation">&lt;/</span>small<span class="token punctuation">&gt;</span>
+			<span class="token tag"><span class="token punctuation">&lt;</span>meter</span> <span class="token attr-name">min</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>0<span class="token punctuation">"</span></span> <span class="token attr-name">max</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>100<span class="token punctuation">"</span></span> <span class="token attr-name">low</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>25<span class="token punctuation">"</span></span> <span class="token attr-name">high</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>75<span class="token punctuation">"</span></span> <span class="token attr-name">optimum</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>100<span class="token punctuation">"</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>75<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>myAccount-meter<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>meter<span class="token punctuation">&gt;</span>
+			<span class="token tag"><span class="token punctuation">&lt;</span>small</span><span class="token punctuation">&gt;</span><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token attr-name"> class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>myAccount-password-strength-text strong<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span>Strong<span class="token tag"><span class="token punctuation">&lt;/</span>p<span class="token punctuation">&gt;</span><span class="token tag"><span class="token punctuation">&lt;/</span>small<span class="token punctuation">&gt;</span>
+		<span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>myAccount-password-instruction<span class="token punctuation">"</span></span></span></span><span class="token punctuation">&gt;</span>
+			<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span></span></span></span></span>
+				<span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span>Your password MUST include:</span><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+			<span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+			<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>success<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span></span></span></span></span>
+				<span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>check-mark__wrapper<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span>
+					<span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>check-mark<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+				<span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+				<span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span>1 number</span><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+			<span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+			<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>fail<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span></span></span></span></span>
+				<span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>check-mark__wrapper<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span>
+					<span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>check-mark<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+				<span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+				<span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span>8 characters in length</span><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+			<span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+			<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span></span></span></span></span>
+				<span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span>Note: Passwords are case sensitive</span><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+			<span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+		<span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">&gt;</span></span>
+
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>submit<span class="token punctuation">"</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Log In<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+
+	<span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token punctuation">&lt;/</span>form</span><span class="token punctuation">&gt;</span></span></code></pre>
+
+							<form>
+								<div class="form-group">
+
+									<label for="">First Name</label>
+									<input type="text" id="" name="">
+
+									<label class="myAccount-form-checkbox">Remember Username
+									  <input type="checkbox" id="" name="" value="">
+									  <span class="myAccount-checkmark"></span>
+									</label>
+
+									<label for="">Select</label>
+									<select id="" name="">
+										<option value="option-1">Option 1</option>
+										<option value="option-2">Option 2</option>
+									</select>
+
+									<label for="">Password</label>
+									<div class="myAccount-password">
+										<input type="password" id="" class="input-myAccount-password" password-shown="false" >
+										<button class="secondary-button" type="button">Show</button>
+										<small><a href="">Forgot username or Password?</a></small>
+										<meter min="0" max="100" low="25" high="75" optimum="100" value="75" class="myAccount-meter"></meter>
+										<small><p class="myAccount-password-strength-text strong">Strong</p></small>
+									</div>
+							
+									<ul class="myAccount-password-instruction">
+										<li>
+											<p>Your password MUST include:</p>
+										</li>
+										<li class="success">
+											<div class="check-mark__wrapper">
+												<div class="check-mark"></div>
+											</div>
+											<p>1 number</p>
+										</li>
+										<li class="error">
+											<div class="check-mark__wrapper">
+												<div class="check-mark"></div>
+											</div>
+											<p>8 characters in length</p>
+										</li>
+										<li>
+											<p>Note: Passwords are case sensitive.</p>
+										</li>
+									</ul>
+
+
+									<input type="submit" value="Log in">
+								</div>
+							</form>
+
+						</article>
+
+
+
+<!--********* FORMS : Error -->
+						<article>
+							<h2>Form Validation</h2>
+							<p>Adding an <code>error</code> or <code>success</code>class to display form status.</p>
+
+<pre class=" language-html"><code class=" language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label <span class="token attr-name">for</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span></span></span>Email Address<span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>email<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span><span class="token attr-value"><span class="token punctuation"></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>error<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>error<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span></span></span></span></span>This email address is not in our records. Please try again.<span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span></code></pre>
+
+							<label for="">Email Address</label>
+							<input type="email" id="" name="" class="error">
+							<p class="error">This email address is not in our records. Please try again.</p>
+
+						</article>
+
+						<article>
+
+<pre class=" language-html"><code class=" language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label <span class="token attr-name">for</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span></span>Select<span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>select <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>error<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>option-1<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span></span></span></span></span>Option 1<span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">&gt;</span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>option-2<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span></span></span></span></span>Option 2<span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token punctuation">&lt;/</span>select</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+
+							<label for="">Select</label>
+							<select id="" name="" class="error">
+								<option value="option-1">Option 1</option>
+								<option value="option-2">Option 2</option>
+							</select>
+
+						</article>
+
+
+						<article>
+
+<pre class=" language-html"><code class=" language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label <span class="token attr-name">for</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span></span>Password<span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">&gt;</span>
+<span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>myAccount-password error<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>password<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>input-myAccount-password<span class="token punctuation">"</span></span> <span class="token attr-name">password-shown</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>false<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>secondary-button<span class="token punctuation">"</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span></span><span class="token punctuation">&gt;<span class="token punctuation"></span></span></span></span></span>Show<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>small<span class="token punctuation">&gt;</span><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;<span class="token punctuation"></span></span></span></span></span>Passwords cannot include the highlighted symbols. Please use only !@#$_-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>small</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+
+							<label for="">Password</label>
+							<div class="myAccount-password error">
+								<input type="password" id="" class="input-myAccount-password" password-shown="false">
+								<button class="secondary-button" type="button">Show</button>
+								<small><p>Passwords cannot include the highlighted symbols. Please use only !@#$_-</p></small>
+							</div>
+
+						</article>
+
+					</section>
+<!--********* FORMS-END ////////////-->
+
+				</main>
+			</div>
+		</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="container">
+			<div class="row">
+				<div class="column">
+					100%
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="column">
+					In publishing and graphic design, lorem ipsum is a filler text or greeking commonly used to demonstrate the textual elements of a graphic document or visual presentation. Replacing meaningful content with placeholder text allows designers to design the form of the content before the content itself has been produced.
+				</div>
+				<div class="column">
+					50%
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="column">
+					33.3%
+				</div>
+				<div class="column">
+					33.3%
+				</div>
+				<div class="column">
+					33.3%
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="column">
+					25%
+				</div>
+				<div class="column">
+					25%
+				</div>
+				<div class="column">
+					25%
+				</div>
+				<div class="column">
+					25%
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="column">
+					20%
+				</div>
+				<div class="column">
+					20%
+				</div>
+				<div class="column">
+					20%
+				</div>
+				<div class="column">
+					20%
+				</div>
+				<div class="column">
+					20%
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="column">
+					16.6%
+				</div>
+				<div class="column">
+					16.6%
+				</div>
+				<div class="column">
+					16.6%
+				</div>
+				<div class="column">
+					16.6%
+				</div>
+				<div class="column">
+					16.6%
+				</div>
+				<div class="column">
+					16.6%
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="column">
+					14.2%
+				</div>
+				<div class="column">
+					14.2%
+				</div>
+				<div class="column">
+					14.2%
+				</div>
+				<div class="column">
+					14.2%
+				</div>
+				<div class="column">
+					14.2%
+				</div>
+				<div class="column">
+					14.2%
+				</div>
+				<div class="column">
+					14.2%
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="column">
+					12.5%
+				</div>
+				<div class="column">
+					12.5%
+				</div>
+				<div class="column">
+					12.5%
+				</div>
+				<div class="column">
+					12.5%
+				</div>
+				<div class="column">
+					12.5%
+				</div>
+				<div class="column">
+					12.5%
+				</div>
+				<div class="column">
+					12.5%
+				</div>
+				<div class="column">
+					12.5%
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="column">
+					11.1%
+				</div>
+				<div class="column">
+					11.1%
+				</div>
+				<div class="column">
+					11.1%
+				</div>
+				<div class="column">
+					11.1%
+				</div>
+				<div class="column">
+					11.1%
+				</div>
+				<div class="column">
+					11.1%
+				</div>
+				<div class="column">
+					11.1%
+				</div>
+				<div class="column">
+					11.1%
+				</div>
+				<div class="column">
+					11.1%
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="column">
+					10%
+				</div>
+				<div class="column">
+					10%
+				</div>
+				<div class="column">
+					10%
+				</div>
+				<div class="column">
+					10%
+				</div>
+				<div class="column">
+					10%
+				</div>
+				<div class="column">
+					10%
+				</div>
+				<div class="column">
+					10%
+				</div>
+				<div class="column">
+					10%
+				</div>
+				<div class="column">
+					10%
+				</div>
+				<div class="column">
+					10%
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="column _25">
+					Twenty-five Percent
+				</div>
+				<div class="column _75">
+					Seventy-five Percent
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="column">
+					<div class="row">
+						<div class="column">
+							Nested
+						</div>
+						<div class="column">
+							Nested
+						</div>
+					</div>
+				</div>
+				<div class="column">
+					Nothing Nested
+				</div>
+			</div>
+
+		</div> -->
+	</body>
+</html>
+
+
