@@ -16,42 +16,42 @@
 [type=number], [type=password], [type=search],
 [type=tel], [type=text], [type=time],
 [type=url], [type=week], select, textarea {
-    display: block;
-    border: 1px solid $color-form-border;
-    border-radius: 0px;
-    padding: .75rem;
-    outline: none;
-    background: transparent;
-    margin-bottom: 20px;
-    font-size: 1rem;
-    width: 100%;
-    max-width: 100%;
-    line-height: 1;
-    height: 45px;
- 	&::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-    	color: $color-form-text-placeholder;
-    	opacity: 1; /* Firefox */
+	display: block;
+	border: 1px solid $color-form-border;
+	border-radius: 0px;
+	padding: .75rem;
+	outline: none;
+	background: transparent;
+	margin-bottom: 20px;
+	font-size: 1rem;
+	width: 100%;
+	max-width: 100%;
+	line-height: 1;
+	height: 45px;
+	&::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+		color: $color-form-text-placeholder;
+		opacity: 1; /* Firefox */
 	}
 
 	&:-ms-input-placeholder { /* Internet Explorer 10-11 */
-	    color: $color-form-text-placeholder;
+		color: $color-form-text-placeholder;
 	}
 
 	&::-ms-input-placeholder { /* Microsoft Edge */
-    	color: $color-form-text-placeholder;
+		color: $color-form-text-placeholder;
 	}
-    &.error {
-        border: 1px solid $color-error;
-    }
-    &.success {
-        border: 1px solid $color-success;
-    }
+	&.error {
+		border: 1px solid $color-error;
+	}
+	&.success {
+		border: 1px solid $color-success;
+	}
  }
 
 
  select {
- 	-webkit-appearance: none;
- 	-moz-appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
 	width: 100%;
 	background: url("../img/formSelectArrow.png") no-repeat right;
 	padding-right: 30px;
@@ -63,244 +63,307 @@
 	display: inline;
 	font-size: .875em; // (14px)
 	line-height: 1.3em;
-    display: block;
-    position: relative;
-    padding-left: 30px;
-    margin-bottom: 20px;
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+	display: block;
+	position: relative;
+	padding-left: 30px;
+	margin-bottom: 20px;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
 
  }
 
 
 /* Hide the browser's default checkbox */
 .myAccount-form-checkbox input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
 }
 
 /* Create a custom checkbox */
 .myAccount-checkmark {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 20px;
-    width: 20px;
-    border: 1px solid $color-form-border;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 20px;
+	width: 20px;
+	border: 1px solid $color-form-border;
 }
 
 
 
 /* When the checkbox is checked, add a blue background */
 .myAccount-form-checkbox input:checked ~ .myAccount-checkmark {
-    background-color: $color-button;
+	background-color: $color-button;
 }
 
 /* Create the checkmark/indicator (hidden when not checked) */
 .myAccount-checkmark:after {
-    content: "";
-    position: absolute;
-    display: none;
+	content: "";
+	position: absolute;
+	display: none;
 }
 
 /* Show the checkmark when checked */
 .myAccount-form-checkbox input:checked ~ .myAccount-checkmark:after {
-    display: block;
+	display: block;
 }
 
 /* Style the checkmark/indicator */
 .myAccount-form-checkbox .myAccount-checkmark:after {
-    left: 7px;
-    top: 4px;
-    width: 5px;
-    height: 10px;
-    border: solid $color-white;
-    border-width: 0 3px 3px 0;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
+	left: 7px;
+	top: 4px;
+	width: 5px;
+	height: 10px;
+	border: solid $color-white;
+	border-width: 0 3px 3px 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
 }
 
 
 // password SHOW HIDE
 .myAccount-password {
-    display: flex;
-    flex-wrap: wrap;
-    &.error {
-        input {
-            border-right: none;
-            border-color: $color-error;
-            margin-bottom: 0px;
-            flex: 0 0 75%;
-        }
-        p {
-            margin-top: 20px;
-            color: $color-error;
-        }
-    }
+	display: flex;
+	flex-wrap: wrap;
+	&.error {
+		input {
+			border-right: none;
+			border-color: $color-error;
+			margin-bottom: 0px;
+			flex: 0 0 75%;
+		}
+		p {
+			margin-top: 20px;
+			color: $color-error;
+		}
+	}
 
-    &.success {
-        input {
-            border-right: none;
-            border-color: $color-success;
-            margin-bottom: 0px;
-            flex: 0 0 75%;
-        }
-    }
+	&.success {
+		input {
+			border-right: none;
+			border-color: $color-success;
+			margin-bottom: 0px;
+			flex: 0 0 75%;
+		}
+	}
 
-    input {
-        border-right: none;
-        margin-bottom: 0px;
-        flex: 0 0 75%;
-    }
-    button {
-        flex: 0 0 25%;
-        margin-bottom:0px;
-        height: 45px;
-    }
-    small a, small p {
-        display: inline-block;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        flex: 0 0 100%;
-    }
+	input {
+		border-right: none;
+		margin-bottom: 0px;
+		flex: 0 0 75%;
+	}
+	button {
+		flex: 0 0 25%;
+		margin-bottom:0px;
+		height: 45px;
+	}
+	small a, small p {
+		display: inline-block;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		flex: 0 0 100%;
+	}
 }
 
 
-meter.myAccount-meter {
-    flex: 0 0 100%;
-    margin-top: 10px;
-    margin-bottom: 5px;
-    /* Reset the default appearance */
-    // -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    /* Firefox */
-    background: none; /* Required to get rid of the default background prop. */
-    background-color: $color-lightgrey; 
+// meter.myAccount-meter {
+//     flex: 0 0 100%;
+//     margin-top: 10px;
+//     margin-bottom: 5px;
+//     /* Reset the default appearance */
+//     // -webkit-appearance: none;
+//     -moz-appearance: none;
+//     appearance: none;
+//     /* Firefox */
+//     background: none; /* Required to get rid of the default background prop. */
+//     background-color: $color-lightgrey; 
+// }
+
+
+// small p.myAccount-password-strength-text {
+//     flex: 0 0 100%;
+//     &.strong {
+//         color: $color-green;
+//     }
+//     &.ok {
+//         color: $color-yellow;
+//     }
+//     &.weak {
+//         color: $color-red;
+//     }
+// }
+
+
+
+// meter.myAccount-meter::-webkit-meter-bar {
+//     background: $color-lightgrey;
+// }
+
+// meter.myAccount-meter::-webkit-meter-optimum-value {
+//     background: $color-green;
+// }
+
+// meter.myAccount-meter::-webkit-meter-suboptimum-value {
+//     background: $color-yellow;
+// }
+
+// meter.myAccount-meter::-webkit-meter-even-less-good-value {
+//     background: $color-red;
+// }
+
+
+// /* Firefox */
+// meter.myAccount-meter::-moz-meter-bar {
+// }
+
+// meter.myAccount-meter:-moz-meter-optimum::-moz-meter-bar {
+//   background: #86CC00;
+// }
+
+// meter.myAccount-meter:-moz-meter-sub-optimum::-moz-meter-bar {
+//   background: #FFDB1A;
+// }
+
+// meter.myAccount-meter:-moz-meter-sub-sub-optimum::-moz-meter-bar {
+//   background: #CC4600;
+// }
+
+
+
+// Password Strength Meter
+// --------------------------------------------------
+
+.password-meter-container {
+  text-align: center;
+  margin-bottom: 20px;
+  p {
+    margin-bottom: 0px;
+  }
+
 }
 
 
-small p.myAccount-password-strength-text {
-    flex: 0 0 100%;
-    &.strong {
-        color: $color-green;
-    }
-    &.ok {
-        color: $color-yellow;
-    }
-    &.weak {
-        color: $color-red;
-    }
+// Password Strength Meter : Outer container
+.password-meter {
+	flex: 0 0 100%;
+	overflow: none;
+	height: 10px;
+	margin-bottom: 40px;
+	background-color: $color-mediumgrey;
+	border-radius: none;
+	box-shadow: none;
+}
+
+.password-meter-body {
+	display: block;
+	margin-top:5px;
+}
+
+// Password Strength Meter Bar : Progress
+.password-meter-bar {
+  width: 0%;
+  height: 100%;
+  font-size: 14px;
+  color: purple;
+  text-align: center;
+  background-color: transparent;
+  float: none;
+  box-shadow: none;
+  -webkit-transition: width .6s;
+  transition: width .6s;
+  transition-timing-function: ease;
 }
 
 
+// Password Strength Meter Bar : Variations
+// -------------------------
 
-meter.myAccount-meter::-webkit-meter-bar {
-    background: $color-lightgrey;
+.password-meter-bar-success {
+  background-color: $color-green;
 }
 
-meter.myAccount-meter::-webkit-meter-optimum-value {
-    background: $color-green;
+.password-meter-bar-warning {
+  background-color: $color-yellow;
 }
 
-meter.myAccount-meter::-webkit-meter-suboptimum-value {
-    background: $color-yellow;
+.password-meter-bar-danger {
+  background-color: $color-red;
 }
 
-meter.myAccount-meter::-webkit-meter-even-less-good-value {
-    background: $color-red;
-}
-
-
-/* Firefox */
-meter.myAccount-meter::-moz-meter-bar {
-}
-
-meter.myAccount-meter:-moz-meter-optimum::-moz-meter-bar {
-  background: #86CC00;
-}
-
-meter.myAccount-meter:-moz-meter-sub-optimum::-moz-meter-bar {
-  background: #FFDB1A;
-}
-
-meter.myAccount-meter:-moz-meter-sub-sub-optimum::-moz-meter-bar {
-  background: #CC4600;
-}
 
 
 
 // password rules checkmark
 ul.myAccount-password-instruction {
-    list-style-type: none;
-    margin:0px 0px 20px 0px;
-    padding:0px;
-    li {
-        margin:0px 0px 5px 0px;
-        display: flex;
-        align-items: center;
-        &.success {
-            .check-mark__wrapper {
-                border: 2px solid $color-green;
-                .check-mark {
-                    background-color: $color-green;
-                }
-            }       
-        }
-        &.error {
-            .check-mark__wrapper {
-                border: 2px solid $color-red;
-                .check-mark {
-                    background-color: $color-red;
-                }
-            }       
-        }
-    }
-    p {
-        display: inline-block;
-        margin-bottom: 0px;
-        font-size: 80%;
-    }
+	list-style-type: none;
+	margin:0px 0px 20px 0px;
+	padding:0px;
+	li {
+		margin:0px 0px 5px 0px;
+		display: flex;
+		align-items: center;
+		&.success {
+			.check-mark__wrapper {
+				border: 2px solid $color-green;
+				.check-mark {
+					background-color: $color-green;
+				}
+			}       
+		}
+		&.error {
+			.check-mark__wrapper {
+				border: 2px solid $color-red;
+				.check-mark {
+					background-color: $color-red;
+				}
+			}       
+		}
+	}
+	p {
+		display: inline-block;
+		margin-bottom: 0px;
+		font-size: 80%;
+	}
 }
 
 .check-mark__wrapper {
-    width: 17px;
-    height: 17px;
-    margin: 0px 5px 0px 0px;
-    border: 2px solid $color-text;
-    border-radius: 50%;
-    display: inline-block;
-    overflow: hidden;
+	width: 17px;
+	height: 17px;
+	margin: 0px 5px 0px 0px;
+	border: 2px solid $color-text;
+	border-radius: 50%;
+	display: inline-block;
+	overflow: hidden;
 }
 
 
 .check-mark {
-    position: relative;
-    width: 5px;
-    height: 9px;
-    margin-left: 4px;
-    margin-bottom: 0px;
-    margin-top: 1px;
-    background-color: $color-text;
-    -webkit-transform: rotate(45deg);
-    transform: rotate(45deg);
+	position: relative;
+	width: 5px;
+	height: 9px;
+	margin-left: 4px;
+	margin-bottom: 0px;
+	margin-top: 1px;
+	background-color: $color-text;
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
 }
 
 .check-mark::before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: -1px;
-    right: 2px;
-    z-index: 10;
-    width: 5px;
-    height: 8px;
-    background-color: $color-white;
+	content: "";
+	display: block;
+	position: absolute;
+	top: -1px;
+	right: 2px;
+	z-index: 10;
+	width: 5px;
+	height: 8px;
+	background-color: $color-white;
 }
 
 
