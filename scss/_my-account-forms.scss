@@ -28,16 +28,16 @@
 	max-width: 100%;
 	line-height: 1;
 	height: 45px;
-	&::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+	&::placeholder {
 		color: $color-form-text-placeholder;
-		opacity: 1; /* Firefox */
+		opacity: 1; 
 	}
 
-	&:-ms-input-placeholder { /* Internet Explorer 10-11 */
+	&:-ms-input-placeholder { 
 		color: $color-form-text-placeholder;
 	}
 
-	&::-ms-input-placeholder { /* Microsoft Edge */
+	&::-ms-input-placeholder {
 		color: $color-form-text-placeholder;
 	}
 	&.error {
@@ -58,10 +58,10 @@
  }
 
 
-// Checkbox
+
  label.myAccount-form-checkbox{
 	display: inline;
-	font-size: .875em; // (14px)
+	font-size: .875em;
 	line-height: 1.3em;
 	display: block;
 	position: relative;
@@ -76,14 +76,14 @@
  }
 
 
-/* Hide the browser's default checkbox */
+
 .myAccount-form-checkbox input {
 	position: absolute;
 	opacity: 0;
 	cursor: pointer;
 }
 
-/* Create a custom checkbox */
+
 .myAccount-checkmark {
 	position: absolute;
 	top: 0;
@@ -95,24 +95,24 @@
 
 
 
-/* When the checkbox is checked, add a blue background */
+
 .myAccount-form-checkbox input:checked ~ .myAccount-checkmark {
 	background-color: $color-button;
 }
 
-/* Create the checkmark/indicator (hidden when not checked) */
+
 .myAccount-checkmark:after {
 	content: "";
 	position: absolute;
 	display: none;
 }
 
-/* Show the checkmark when checked */
+
 .myAccount-form-checkbox input:checked ~ .myAccount-checkmark:after {
 	display: block;
 }
 
-/* Style the checkmark/indicator */
+
 .myAccount-form-checkbox .myAccount-checkmark:after {
 	left: 7px;
 	top: 4px;
@@ -126,7 +126,7 @@
 }
 
 
-// password SHOW HIDE
+
 .myAccount-password {
 	display: flex;
 	flex-wrap: wrap;
@@ -171,72 +171,7 @@
 }
 
 
-// meter.myAccount-meter {
-//     flex: 0 0 100%;
-//     margin-top: 10px;
-//     margin-bottom: 5px;
-//     /* Reset the default appearance */
-//     // -webkit-appearance: none;
-//     -moz-appearance: none;
-//     appearance: none;
-//     /* Firefox */
-//     background: none; /* Required to get rid of the default background prop. */
-//     background-color: $color-lightgrey; 
-// }
 
-
-// small p.myAccount-password-strength-text {
-//     flex: 0 0 100%;
-//     &.strong {
-//         color: $color-green;
-//     }
-//     &.ok {
-//         color: $color-yellow;
-//     }
-//     &.weak {
-//         color: $color-red;
-//     }
-// }
-
-
-
-// meter.myAccount-meter::-webkit-meter-bar {
-//     background: $color-lightgrey;
-// }
-
-// meter.myAccount-meter::-webkit-meter-optimum-value {
-//     background: $color-green;
-// }
-
-// meter.myAccount-meter::-webkit-meter-suboptimum-value {
-//     background: $color-yellow;
-// }
-
-// meter.myAccount-meter::-webkit-meter-even-less-good-value {
-//     background: $color-red;
-// }
-
-
-// /* Firefox */
-// meter.myAccount-meter::-moz-meter-bar {
-// }
-
-// meter.myAccount-meter:-moz-meter-optimum::-moz-meter-bar {
-//   background: #86CC00;
-// }
-
-// meter.myAccount-meter:-moz-meter-sub-optimum::-moz-meter-bar {
-//   background: #FFDB1A;
-// }
-
-// meter.myAccount-meter:-moz-meter-sub-sub-optimum::-moz-meter-bar {
-//   background: #CC4600;
-// }
-
-
-
-// Password Strength Meter
-// --------------------------------------------------
 
 .password-meter-container {
   text-align: center;
@@ -248,7 +183,6 @@
 }
 
 
-// Password Strength Meter : Outer container
 .password-meter {
 	flex: 0 0 100%;
 	overflow: none;
@@ -264,7 +198,7 @@
 	margin-top:5px;
 }
 
-// Password Strength Meter Bar : Progress
+
 .password-meter-bar {
   width: 0%;
   height: 100%;
@@ -279,8 +213,7 @@
 }
 
 
-// Password Strength Meter Bar : Variations
-// -------------------------
+
 
 .password-meter-bar-success {
   background-color: $color-green;
@@ -297,7 +230,7 @@
 
 
 
-// password rules checkmark
+
 ul.myAccount-password-instruction {
 	list-style-type: none;
 	margin:0px 0px 20px 0px;
