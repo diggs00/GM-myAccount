@@ -29,9 +29,13 @@ header {
 		font-family: 'Montserrat', sans-serif;
 		font-weight: 800;
 		text-shadow: 5px 5px 0px $color-text;
+		color: $color-white;
+		  margin: 0.67em 0;
 	}
 
 	p {
+		color: $color-white;
+		line-height: 1.15;
 		@media screen and (min-width: $break-desktop) {
 			font-size: 1.125em;
 			line-height: 1.5;
@@ -104,7 +108,7 @@ section {
 				margin-top: -100px;
 				margin-bottom: -100px;
 			}
-			h2 {
+			h2.sg {
 				font-size: 1.25em;
 			}
 		}
@@ -136,7 +140,7 @@ aside {
 		padding: 10px;
 		border-bottom: none;
 	}
-	h2 {
+	h2.sg {
 		font-family: 'Montserrat', sans-serif;
 		font-size: 1.25em;
 		font-weight: 800;
@@ -243,27 +247,33 @@ body {
 	color: $color-text;
 }
 
+h1.sg, h2.sg, p.sg {
+	font-family: 'Lato', sans-serif;
+}
 
-h1 {
+
+h1.sg {
 		font-size: 2em;
 	@media screen and (min-width: $break-desktop) {
 		//Base browser font size is 16px, noramlize.css changes it to 2em(32px), 3em changes it to 16x3 = 48px
 		font-size: 3em;
+
 	}
 }
 
-h2 {
+h2.sg {
 		font-size: 1.5em;
 		margin:0px 0px 15px 0px;
 	@media screen and (min-width: $break-desktop) {
 		//Base browser font size is 16px, noramlize.css changes it to 2em(32px), 3em changes it to 16x3 = 48px
 		font-size: 2.2em;
+
 	}
 }
 
 
 
-p {
+p.sg {
 	font-size: 1em;
 	margin-bottom:20px;
 	margin-top:0px;

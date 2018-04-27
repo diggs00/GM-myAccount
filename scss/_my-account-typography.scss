@@ -1,0 +1,53 @@
+h1,h2,h3,p {
+font-family: Arial, Helvetica, sans-serif;
+  line-height: $line-height-base;
+  color: $color-text;
+}
+
+
+h1 {
+  font-size: $font-size-large;
+  @media screen and (min-width: $break-desktop) {
+    font-size: $font-size-xlarge;
+  }
+}
+
+h2 {
+  font-size: $font-size-medium;
+  @media screen and (min-width: $break-desktop) {
+    font-size: $font-size-large;
+  }
+}
+
+h3 {
+  font-size: $font-size-base;
+  @media screen and (min-width: $break-desktop) {
+    font-size: $font-size-medium;
+  }
+}
+
+
+p {
+  font-size: $font-size-base;
+  color: $color-text;
+  margin: 0px 0px 10px 0px;
+}
+
+small {
+  font-size: $font-size-small;
+}
+
+
+.myAccount-title {
+  background: $color-mediumgrey;
+  padding:20px;
+  margin-bottom: 20px;
+  h2 {
+      margin:0px;
+  }
+}
+
+
+
+
+

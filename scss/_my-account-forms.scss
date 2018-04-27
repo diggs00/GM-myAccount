@@ -23,7 +23,7 @@
 	outline: none;
 	background: transparent;
 	margin-bottom: 20px;
-	font-size: 1rem;
+	font-size: $font-size-base;
 	width: 100%;
 	max-width: 100%;
 	line-height: 1;
@@ -61,7 +61,7 @@
 
  label.myAccount-form-checkbox{
 	display: inline;
-	font-size: .875em;
+	font-size: $font-size-small;
 	line-height: 1.3em;
 	display: block;
 	position: relative;
@@ -202,7 +202,6 @@
 .password-meter-bar {
   width: 0%;
   height: 100%;
-  font-size: 14px;
   text-align: center;
   background-color: transparent;
   float: none;
@@ -259,7 +258,7 @@ ul.myAccount-password-instruction {
 	p {
 		display: inline-block;
 		margin-bottom: 0px;
-		font-size: 80%;
+		font-size: $font-size-xsmall;
 	}
 }
 

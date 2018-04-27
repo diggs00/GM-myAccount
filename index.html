@@ -34,16 +34,16 @@
 
 		<header class="text-center vertical-center">
 			<div class="small-container">
-				<h1>myAccount - SG</h1>
-				<p>myAccount - SG is a minimalist Style Guide that provides consistent Styling and Markup documentation for the MY ACCOUNT reusable component</p>    
+				<h1 class="sg">myAccount - SG</h1>
+				<p class="sg">myAccount - SG is a minimalist Style Guide that provides consistent Styling and Markup documentation for the MY ACCOUNT reusable component</p>    
 			</div>
 		</header>
 
 		<section class="download-section">
 			<div class="downloads small-container">
-				<h2>Download</h2>
+				<h2 class="sg">Download</h2>
 				<img src="dist/img/sass.png"/>
-				<p><a href="https://github.com/diggs00/GM-myAccount/raw/master/scss/myAccountSCSS.zip">Download</a> the source files and set up your Sass workflow.</p> 
+				<p class="sg"><a href="https://github.com/diggs00/GM-myAccount/raw/master/scss/myAccountSCSS.zip">Download</a> the source files and set up your Sass workflow.</p> 
 			</div>
 		</section>
 
@@ -52,10 +52,11 @@
 
 <!-- NAV -->
 					<aside>
-						<h2>myAccount - SG</h2>
+						<h2 class="sg">myAccount - SG</h2>
 						<div class="toggle-nav"></div>
 						<nav>
 							<ul class="fa-ul">
+								<li><a href="#type"><span class="fa-li"><i class="fas fa-font"></i></span>Typography</a></li>
 								<li><a href="#buttons"><span class="fa-li"><i class="fas fa-hand-point-up"></i></span>Buttons</a></li>
 								<li><a href="#forms"><span class="fa-li"><i class="fas fa-check-square"></i></span>Forms</a></li>
 							</ul>
@@ -69,11 +70,62 @@
 					<main class="content">
 						<div class="medium-container">
 
+<!--********* TYPOGRAPHY -->
+							<section id="type">
+								<article>
+									<h2 class="sg">Typography</h2>
+									<p class="sg">The base font size is set to 1rem on the html element. Headings all have the same line-height and margins.</p>
+
+<pre class=" language-html"><code class=" language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">&gt;<span class="token punctuation"></span></span></span>Heading 1<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h2</span><span class="token punctuation">&gt;<span class="token punctuation"></span></span></span>Heading 2<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h2</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h3</span><span class="token punctuation">&gt;<span class="token punctuation"></span></span></span>Heading 3<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h3</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+
+							<h1>Heading 1</h1>
+							<h2>Heading 2</h2>
+							<h3>Heading 3</h3>
+						</article>
+
+
+<!--********* TYPOGRAPHY : Paragraph Text -->
+						<article>
+							<h2 class="sg">Paragraph</h2>
+							<p class="sg">The base font size is set to 1rem on the html element. Paragraphs have 10px margin bottom.</p>
+
+<pre class=" language-html"><code class=" language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;<span class="token punctuation"></span></span></span>This is body paragraph text.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;<span class="token punctuation"></span></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>small</span><span class="token punctuation">&gt;<span class="token punctuation"></span></span></span>This is small body paragraph text.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>small</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+
+
+							<p>This is body paragraph text.</p>
+							<p><small>This is small paragraph text.</small></p>
+						</article>
+
+<!--********* TYPOGRAPHY : Component Title -->
+						<article>
+							<h2 class="sg">Title Heading</h2>
+							<p class="sg">Title Headings use an <code>h2</code> element that is contained within a <code>div</code> with <code>myAccount-title</code> class applied to give us the preferred title heading style.
+
+<pre class=" language-html"><code class=" language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>myAccount-title<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h2</span><span class="token punctuation">&gt;<span class="token punctuation"></span></span></span></span>Create New Account<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h2</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
+
+							<div class="myAccount-title">
+								<h2>Create New Account</h2>
+							</div>
+						</article>
+
+					</section>
+<!--********* TYPOGRAPHY-END ////////////-->
+
+<hr></hr>
+
+
 <!--********* BUTTONS -->
 							<section id="buttons">
 								<article>
-									<h2>Buttons</h2>
-									<p>Button elements, links with a <code>button</code> class, and input elements should all render exactly the same.</p>
+									<h2 class="sg">Buttons</h2>
+									<p class="sg">Button elements, links with a <code>button</code> class, and input elements should all render exactly the same.</p>
 
 <pre class=" language-html"><code class=" language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span><span class="token punctuation">&gt;</span></span>Button<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>submit<span class="token punctuation">"</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Submit<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
@@ -88,8 +140,8 @@
 
 <!--********* BUTTON : SECONDARY -->
 						<article>
-							<h2>Secondary Buttons</h2>
-							<p>Adding a <code>secondary-button</code> class will display a secondary color.</p>
+							<h2 class="sg">Secondary Buttons</h2>
+							<p class="sg">Adding a <code>secondary-button</code> class will display a secondary color.</p>
 
 <pre class=" language-html"><code class=" language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>secondary-button<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Button<span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>submit<span class="token punctuation">"</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Submit<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>secondary-button<span class="token punctuation">"</span><span class="token punctuation">&gt;</span></span>	q
@@ -104,8 +156,8 @@
 
 <!--********* BUTTON : DISABLED -->
 						<article>
-							<h2>Disabled Buttons</h2>
-							<p>Adding a <code>disabled-button</code> class will create full-width, block level buttons. Button styles can be combined.</p>
+							<h2 class="sg">Disabled Buttons</h2>
+							<p class="sg">Adding a <code>disabled-button</code> class will create full-width, block level buttons. Button styles can be combined.</p>
 
 <pre class=" language-html"><code class=" language-html"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>disabled-button<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span>Button<span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>submit<span class="token punctuation">"</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Submit<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>disabled-button<span class="token punctuation">"</span><span class="token punctuation">&gt;</span></span>
@@ -122,8 +174,8 @@
 
 <!--********* BUTTON : FULL WIDTH -->
 						<article>
-							<h2>Full Width Buttons</h2>
-							<p>Adding a <code>full-button</code> class will create full-width, block level buttons. Button styles can be combined.</p>
+							<h2 class="sg">Full Width Buttons</h2>
+							<p class="sg">Adding a <code>full-button</code> class will create full-width, block level buttons. Button styles can be combined.</p>
 
 <pre class=" language-html"><code class=" language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>full-button<span class="token punctuation">"</span></span><span class="token punctuation">&gt;<span class="token punctuation"></span></span></span>Button<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>submit<span class="token punctuation">"</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Submit<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>full-button<span class="token punctuation">"</span><span class="token punctuation">&gt;</span></span>
@@ -139,8 +191,8 @@
 
 <!--********* BUTTON : GROUP Buttons -->
 						<article>
-							<h2>Group Buttons</h2>
-							<p>Adding a <code>group-button-container</code> class to a containing <code>div</code> will allow 2 buttons to sit next to each other.</p>
+							<h2 class="sg">Group Buttons</h2>
+							<p class="sg">Adding a <code>group-button-container</code> class to a containing <code>div</code> will allow 2 buttons to sit next to each other.</p>
 
 <pre class=" language-html"><code class=" language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>group-button-container<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
 	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>secondary-button<span class="token punctuation">"</span></span><span class="token punctuation">&gt;<span class="token punctuation"></span></span></span></span>Button<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
@@ -161,8 +213,8 @@
 <!--********* FORMS -->
 							<section id="forms">
 								<article>
-									<h2>Forms</h2>
-									<p>Default forms will have full-width, block level labels, inputs, selects, and textareas.</p>
+									<h2 class="sg">Forms</h2>
+									<p class="sg">Default forms will have full-width, block level labels, inputs, selects, and textareas.</p>
 
 <pre class=" language-html"><code class=" language-html"><span class="token tag"><span class="token punctuation">&lt;</span>form</span></span><span class="token punctuation">&gt;</span></span>
 	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>form-group<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span>
@@ -276,8 +328,8 @@
 
 <!--********* FORMS : Error -->
 						<article>
-							<h2>Form Validation</h2>
-							<p>Adding an <code>error</code> or <code>success</code>class to display form status.</p>
+							<h2 class="sg">Form Validation</h2>
+							<p class="sg">Adding an <code>error</code> or <code>success</code>class to display form status.</p>
 
 <pre class=" language-html"><code class=" language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label <span class="token attr-name">for</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span></span></span>Email Address<span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">&gt;</span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>email<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span><span class="token attr-value"><span class="token punctuation"></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>error<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span>
