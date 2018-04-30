@@ -1,0 +1,32 @@
+
+.myAccount-border-container {
+	border: 1px solid $color-darkgrey;
+	padding: 20px 0px;
+}
+
+
+.myAccount-flex-container {
+	display: flex;
+	flex-direction: column;
+	@media screen and (min-width: $break-desktop) {
+		justify-content: space-between;
+		flex-direction: row;
+	}
+}
+
+
+.myAccount-item {
+	flex: 1 1 100%;
+	margin:0px 40px;
+	@media screen and (min-width: $break-desktop) {
+		flex-basis: calc(50% - 25px);
+		margin:0px 40px;
+	}
+	&:nth-child(2) {
+		margin-top: 40px;
+		@media screen and (min-width: $break-desktop) {
+			margin-top: 0px;
+		}
+
+	}
+}
