@@ -1,0 +1,59 @@
+.myAccount-alert {
+	border: 1px solid $color-red;
+	padding:20px;
+	display: flex;
+	.close {
+		margin-left: auto;
+		position: relative;
+		overflow: hidden;
+		cursor: pointer;
+		width: 30px;
+		height: 30px;
+		background: white;
+		-moz-border-radius: 30px;
+		-webkit-border-radius: 30px;
+		border-radius: 50px;
+		border: 1px solid $color-red;
+		&:hover {
+			background: $color-red;
+			&::before, &::after {
+				background: $color-white;
+			}
+		}
+
+		&::before, &::after {
+			content: '';
+			position: absolute;
+			width: 70%;
+			height:70%;
+			top: 50%;
+			left: 15%;
+			margin-top: -1px;
+			background: $color-red;
+			height: 1px;
+		}
+		&::before {
+			transform: (rotate(45deg));
+		}
+		&::after {
+			transform:(rotate(-45deg));
+		}
+
+	}
+}
+
+.myAccount-message {
+		flex-grow: 0;
+		flex-shrink: 0;
+        flex-basis: 90%;
+	p {
+		color: $color-red;
+		margin-bottom: 10px;
+		&:nth-child(2) {
+			margin-bottom: 0px;
+		}
+	}
+}
+
+
+
