@@ -9,7 +9,7 @@ $color-yellow: #FFDB1A;
 $color-green : #86CC00;
 $color-success : #86CC00;
 
-$color-text : #404040;
+$color-text : #474b51;
 $color-lightgrey: #eee;
 $color-mediumgrey: #ddd;
 $color-darkgrey: #A9A9A9;
@@ -21,12 +21,18 @@ $color-disabled-button: #E6E6E6;
 $color-form-border: #A9A9A9;
 $color-form-text-placeholder: #C0C0C0;
 
-$font-size-xsmall: .80em;
+
+$font-family-base: 'Open Sans', sans-serif;
+$font-weight-light: 300;
+$font-weight-regular: 600;
+$font-weight-bold: 700;
+
+$font-size-xsmall: .75em;
 $font-size-small: .875em;
 $font-size-base: 1em;
-$font-size-medium: 1.25em;
-$font-size-large: 1.5em;
-$font-size-xlarge: 2em;
+$font-size-medium: 1.125em;
+$font-size-large: 1.375em;
+$font-size-xlarge: 1.75em;
 
 $line-height-base: 1.25;
 

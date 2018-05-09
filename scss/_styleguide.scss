@@ -249,21 +249,23 @@ body {
 
 h1.sg, h2.sg, p.sg {
 	font-family: 'Lato', sans-serif;
+	  text-transform: none;
 }
 
 
 h1.sg {
 		font-size: 2em;
+		font-weight: 700;
 	@media screen and (min-width: $break-desktop) {
 		//Base browser font size is 16px, noramlize.css changes it to 2em(32px), 3em changes it to 16x3 = 48px
 		font-size: 3em;
-
 	}
 }
 
 h2.sg {
 		font-size: 1.5em;
 		margin:0px 0px 15px 0px;
+		font-weight: 700;
 	@media screen and (min-width: $break-desktop) {
 		//Base browser font size is 16px, noramlize.css changes it to 2em(32px), 3em changes it to 16x3 = 48px
 		font-size: 2.2em;
@@ -277,6 +279,9 @@ p.sg {
 	font-size: 1em;
 	margin-bottom:20px;
 	margin-top:0px;
+	font-family: 'Lato', sans-serif;
+	  font-weight: normal;
+  font-size: $font-size-base;
 }
 
 

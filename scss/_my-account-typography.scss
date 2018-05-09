@@ -1,5 +1,5 @@
 h1,h2,h3,p {
-font-family: Arial, Helvetica, sans-serif;
+  font-family: $font-family-base;
   line-height: $line-height-base;
   color: $color-text;
 }
@@ -7,27 +7,33 @@ font-family: Arial, Helvetica, sans-serif;
 
 h1 {
   font-size: $font-size-large;
+  font-weight: $font-weight-light;
   @media screen and (min-width: $break-desktop) {
     font-size: $font-size-xlarge;
   }
 }
 
 h2 {
-  font-size: $font-size-medium;
-  @media screen and (min-width: $break-desktop) {
-    font-size: $font-size-large;
-  }
-}
-
-h3 {
   font-size: $font-size-base;
+  font-weight: $font-weight-bold;
+  text-transform: uppercase;
   @media screen and (min-width: $break-desktop) {
     font-size: $font-size-medium;
   }
 }
 
+h3 {
+  font-size: $font-size-small;
+  font-weight: $font-weight-bold;
+  @media screen and (min-width: $break-desktop) {
+    font-size: $font-size-small;
+  }
+}
+
 
 p {
+  font-family: $font-family-base;
+  font-weight: $font-weight-light;
   font-size: $font-size-base;
   color: $color-text;
   margin: 0px 0px 10px 0px;

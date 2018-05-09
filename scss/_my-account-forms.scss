@@ -4,7 +4,8 @@
 }
 
  label {
-	font-weight: 600;
+ 	font-family: $font-family-base;
+	font-weight: $font-weight-bold;
 	max-width: 100%;
 	display: block;
 	margin: 0px 0px 10px 0px;
