@@ -18,8 +18,8 @@
     line-height: 1;
     outline: none;
     &:hover {
-    	background: lighten( $color-button, 10% );
-   		border-color: lighten( $color-button, 10% );
+    	background: $color-link;
+   		border-color: $color-link;
     }
 }
 
@@ -43,7 +43,8 @@
     text-decoration: none;
     line-height: 1;
     &:hover {
-    	background: lighten( $color-button, 50% );
+    	background: $color-white;
+        border-color: $color-button;
     }
 }
 
@@ -96,9 +97,6 @@
 a {
     text-decoration: none;
     color: $color-link;
-    &:hover {
-        color: lighten( $color-link, 10% );
-    }
 }
 
 
