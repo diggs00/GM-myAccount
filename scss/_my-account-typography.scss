@@ -1,21 +1,75 @@
+
+@font-face {
+font-family: "GMGlobalSans_ExtraLight";
+src: url("../fonts/GMGlobalSans-2_ExtraLight.eot");
+src: url("../fonts/GMGlobalSans-2_ExtraLight.eot?#iefix") format("embedded-opentype"),
+url("../fonts/GMGlobalSans-2_ExtraLight.woff") format("woff"),
+url("../fonts/GMGlobalSans-2_ExtraLight.svg#GMGlobalSans-2_ExtraLight") format("svg");
+font-weight: normal;
+font-style: normal;
+}
+
+
+@font-face {
+font-family: "GMGlobalSans_Light";
+src: url("../fonts/GMGlobalSans-3_Light.eot");
+src: url("../fonts/GMGlobalSans-3_Light.eot?#iefix") format("embedded-opentype"),
+url("../fonts/GMGlobalSans-3_Light.woff") format("woff"),
+url("../fonts/GMGlobalSans-3_Light.svg#GMGlobalSans-3_Light") format("svg");
+font-weight: normal;
+font-style: normal;
+}
+
+
+@font-face {
+font-family: "GMGlobalSans_Plain";
+src: url("../fonts/GMGlobalSans-5_Plain.eot");
+src: url("../fonts/GMGlobalSans-5_Plain.eot?#iefix") format("embedded-opentype"),
+url("../fonts/GMGlobalSans-5_Plain.woff") format("woff"),
+url("../fonts/GMGlobalSans-5_Plain.svg#GMGlobalSans-5_Plain") format("svg");
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+font-family: "GMGlobalSans_Bold";
+src: url("../fonts/GMGlobalSans-7_Bold.eot");
+src: url("../fonts/GMGlobalSans-7_Bold.eot?#iefix") format("embedded-opentype"),
+url("../fonts/GMGlobalSans-7_Bold.woff") format("woff"),
+url("../fonts/GMGlobalSans-7_Bold.svg#GMGlobalSans-7_Bold") format("svg");
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+font-family: "GMGlobalSans_ExtraBold";
+src: url("../fonts/GMGlobalSans-8_ExtraBold.eot");
+src: url("../fonts/GMGlobalSans-8_ExtraBold.eot?#iefix") format("embedded-opentype"),
+url("../fonts/GMGlobalSans-8_ExtraBold.woff") format("woff"),
+url("../fonts/GMGlobalSans-8_ExtraBold.svg#GMGlobalSans-8_ExtraBold") format("svg");
+font-weight: normal;
+font-style: normal;
+}
+
+
+
 h1,h2,h3,p {
-  font-family: $font-family-base;
   line-height: $line-height-base;
   color: $color-text;
 }
 
 
 h1 {
+  font-family: $font-family-extralight;
   font-size: $font-size-large;
-  font-weight: $font-weight-light;
   @media screen and (min-width: $break-desktop) {
     font-size: $font-size-xlarge;
   }
 }
 
 h2 {
+  font-family: $font-family-bold;
   font-size: $font-size-base;
-  font-weight: $font-weight-bold;
   text-transform: uppercase;
   @media screen and (min-width: $break-desktop) {
     font-size: $font-size-medium;
@@ -23,8 +77,8 @@ h2 {
 }
 
 h3 {
+  font-family: $font-family-bold;
   font-size: $font-size-small;
-  font-weight: $font-weight-bold;
   @media screen and (min-width: $break-desktop) {
     font-size: $font-size-small;
   }
@@ -32,8 +86,7 @@ h3 {
 
 
 p {
-  font-family: $font-family-base;
-  font-weight: $font-weight-light;
+  font-family: $font-family-light;
   font-size: $font-size-base;
   color: $color-text;
   margin: 0px 0px 10px 0px;
