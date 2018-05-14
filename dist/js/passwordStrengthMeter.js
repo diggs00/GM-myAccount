@@ -30,14 +30,14 @@
             bar.width(proLength - barRightPadding);
 
             if(percent <= 50){
-                bar.addClass('password-meter-bar password-meter-bar-danger');
-                progressBody.html("<small>Weak</small>");
+                bar.addClass('password-meter-bar password-meter-bar-weak');
+                progressBody.html("<p><small>Weak</small></p>");
             }else if(percent <= 80){
-                bar.addClass('password-meter-bar password-meter-bar-warning');
-                progressBody.html("<small>OK</small>");
+                bar.addClass('password-meter-bar password-meter-bar-ok');
+                progressBody.html("<p><small>OK</small></p>");
             }else{
-                bar.addClass('password-meter-bar password-meter-bar-success');
-                progressBody.html("<small>Strong</small>");
+                bar.addClass('password-meter-bar password-meter-bar-strong');
+                progressBody.html("<p><small>Strong</small></p>");
             }
         }
     }

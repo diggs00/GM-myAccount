@@ -183,48 +183,48 @@
 }
 
 
+
 .password-meter {
-	flex: 0 0 100%;
-	overflow: none;
-	height: 10px;
-	margin-bottom: 40px;
-	background-color: $color-mediumgrey;
-	border-radius: none;
-	box-shadow: none;
+   position: relative;
+   flex-basis: 100%;
+   margin-bottom: 20px;
 }
 
 .password-meter-body {
-	display: block;
-	margin-top:5px;
+   height: 10px;
+   background-color: $color-mediumgrey;
+   position: relative;
+   margin-bottom: 20px;
+   p {
+   	padding-top: 10px;
+    margin-bottom: 0px;
+   }
 }
-
 
 .password-meter-bar {
-  width: 0%;
-  height: 100%;
-  text-align: center;
-  background-color: transparent;
-  float: none;
-  box-shadow: none;
-  -webkit-transition: width .6s;
-  transition: width .6s;
-  transition-timing-function: ease;
+   height: 10px;
+   position: absolute;
+   z-index: 1;
+   margin-bottom: 10px;
+   &.password-meter-bar-strong {
+      background-color: $color-green;
+      width: 100%;
+   }
+
+   &.password-meter-bar-ok {
+      background-color: $color-yellow;
+      width: 60%;
+   }
+
+   &.password-meter-bar-weak {
+      background-color: $color-red;
+      width: 30%;
+   }
 }
+ 
 
 
 
-
-.password-meter-bar-success {
-  background-color: $color-green;
-}
-
-.password-meter-bar-warning {
-  background-color: $color-yellow;
-}
-
-.password-meter-bar-danger {
-  background-color: $color-red;
-}
 
 
 
