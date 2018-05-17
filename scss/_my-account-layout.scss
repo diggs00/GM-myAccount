@@ -8,25 +8,24 @@
 .myAccount-flex-container {
 	display: flex;
 	flex-direction: column;
+	margin-bottom: -40px;
 	@media screen and (min-width: $break-desktop) {
 		justify-content: space-between;
 		flex-direction: row;
+		margin-bottom: 0px;
 	}
 }
 
 
-.myAccount-item {
+.myAccount-item-container {
 	flex: 1 1 100%;
-	margin:0px 40px;
-	@media screen and (min-width: $break-desktop) {
-		flex-basis: calc(50% - 25px);
-		margin:0px 40px;
-	}
-	&:nth-child(2) {
-		margin-top: 40px;
-		@media screen and (min-width: $break-desktop) {
-			margin-top: 0px;
-		}
+}
 
+
+.myAccount-item {
+	margin: 0px 40px 40px 40px;
+	@media screen and (min-width: $break-desktop) {
+		flex: 0 0 100%;
+		margin:0px 40px; 
 	}
 }
