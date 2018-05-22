@@ -1,0 +1,51 @@
+.myAccount-vehicletile-container {
+    border: 1px solid $color-darkgrey;
+    p:first-of-type {
+        margin-bottom: 15px;
+    }
+    .vehicletile-image {
+        background: url(https://media.carbook.com/MediaGallery/media/Mjk4NTQ2Xk1lZGlhIEdhbGxlcnk/gRXJ8lc4okfBm8dNLKsx3SWKP3-rpUidctvFsKY4MA4c3is7Ro3jqlBX5JLY43qc_irjnUY1nEk/cc_2015BUI001a_01_640_17U.png) center center no-repeat;
+        background-size: auto 100%;
+        text-align: center;
+        height: 210px;
+        background-color: gray;
+    }
+    .vehicletile-content { 
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        .myAccount-vehicle-specifics {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 15px;
+            p {
+                margin-bottom: 0px;
+            }
+            .myAccount-vehicle-value {
+                display: flex;
+                p:nth-child(2) {
+                    margin-left: auto;
+                }
+            }
+        }
+        hr {
+            margin: 20px 0px;
+            display: block;
+            height: 1px;
+            border: 0;
+            border-top: 1px solid $color-darkgrey;
+            padding: 0; 
+        }
+    }
+    .myAccount-vehicletile-controls {
+        display: flex;
+        padding: 20px;
+        border-top: 1px solid $color-darkgrey;
+        p {
+            margin:0px;
+        }
+        p.remove {
+            margin-left: auto;
+        }
+    }
+}
