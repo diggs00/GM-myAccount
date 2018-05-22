@@ -60,7 +60,7 @@
 								<li><a href="#type"><span class="fa-li"><i class="fas fa-font"></i></span>Typography</a></li>
 								<li><a href="#buttons"><span class="fa-li"><i class="fas fa-hand-point-up"></i></span>Buttons</a></li>
 								<li><a href="#forms"><span class="fa-li"><i class="fas fa-check-square"></i></span>Forms</a></li>
-								<li><a href="#alerts"><span class="fa-li"><i class="fas fa-exclamation-circle"></i></span>Alerts</a></li>
+								<li><a href="#messages"><span class="fa-li"><i class="fas fa-exclamation-circle"></i></span>Messages</a></li>
 								<li><a href="#layout"><span class="fa-li"><i class="fas fa-th-large"></i></span>Layout</a></li>
 							</ul>
 						</nav>
@@ -332,51 +332,64 @@
 <!--********* FORMS : Error -->
 						<article>
 							<h2 class="sg">Form Validation</h2>
-							<p class="sg">Adding an <code>error</code> or <code>success</code>class to display form status.</p>
+							<p class="sg">Adding an <code>myAccount-form-error</code> class to containing <code>div</code>.</p>
 
-<pre class=" language-html"><code class=" language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label <span class="token attr-name">for</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span></span></span>Email Address<span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">&gt;</span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>email<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span><span class="token attr-value"><span class="token punctuation"></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>error<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>error<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span></span></span></span></span>This email address is not in our records. Please try again.<span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span></code></pre>
-
-							<label for="">Email Address</label>
-							<input type="email" id="" name="" class="error">
-							<p class="error">This email address is not in our records. Please try again.</p>
+<pre class=" language-html"><code class=" language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>myAccount-form-error<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span></span></span></span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label <span class="token attr-name">for</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span></span></span>Email Address<span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">&gt;</span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>email<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span><span class="token attr-value"><span class="token punctuation"></span></span></span><span class="token punctuation">&gt;</span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p<span class="token punctuation">&gt;</span></span></span></span></span></span>This email address is not in our records. Please try again.<span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
+							
+							<div class="myAccount-form-error">
+								<label for="">Email Address</label>
+								<input type="email" id="" name="">
+								<p>This is not in our records. Please try again.</p>
+							</div>
 
 						</article>
 
 						<article>
 
-<pre class=" language-html"><code class=" language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label <span class="token attr-name">for</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span></span>Select<span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">&gt;</span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>select <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>error<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span>
-	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>option-1<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span></span></span></span></span>Option 1<span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">&gt;</span></span>
-	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>option-2<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span></span></span></span></span>Option 2<span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">&gt;</span></span>
-<span class="token tag"><span class="token punctuation">&lt;/</span>select</span><span class="token punctuation">&gt;</span></span>
-</code></pre>
+<pre class=" language-html"><code class=" language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>myAccount-form-error<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span></span></span></span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label <span class="token attr-name">for</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span></span>Select<span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">&gt;</span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>select <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>error<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span>
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>option-1<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span></span></span></span></span>Option 1<span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">&gt;</span></span>
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>option-2<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span></span></span></span></span>Option 2<span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">&gt;</span></span>
+	<span class="token tag"><span class="token punctuation">&lt;/</span>select</span><span class="token punctuation">&gt;</span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p<span class="token punctuation">&gt;</span></span></span></span></span></span>This is an error message.<span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
 
-							<label for="">Select</label>
-							<select id="" name="" class="error">
-								<option value="option-1">Option 1</option>
-								<option value="option-2">Option 2</option>
-							</select>
+							<div class="myAccount-form-error">
+								<label for="">Select</label>
+								<select id="" name="" class="error">
+									<option value="option-1">Option 1</option>
+									<option value="option-2">Option 2</option>
+								</select>
+								<p>This is an error message.</p>
+							</div>
 
 						</article>
 
 
 						<article>
 
-<pre class=" language-html"><code class=" language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label <span class="token attr-name">for</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span></span>Password<span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">&gt;</span>
-<span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>myAccount-password error<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span>
-	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>password<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>input-myAccount-password<span class="token punctuation">"</span></span> <span class="token attr-name">password-shown</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>false<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span>
-	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>secondary-button<span class="token punctuation">"</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span></span><span class="token punctuation">&gt;<span class="token punctuation"></span></span></span></span></span>Show<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
-	<span class="token tag"><span class="token tag"></span><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;<span class="token punctuation"></span></span></span></span></span>Passwords cannot include the highlighted symbols. Please use only !@#$_-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+<pre class=" language-html"><code class=" language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>myAccount-form-error<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span></span></span></span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label <span class="token attr-name">for</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span></span>Password<span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">&gt;</span>
+	<span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>myAccount-password<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span>
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>password<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>input-myAccount-password<span class="token punctuation">"</span></span> <span class="token attr-name">password-shown</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>false<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span>
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>secondary-button<span class="token punctuation">"</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span></span><span class="token punctuation">&gt;<span class="token punctuation"></span></span></span></span></span>Show<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+		<span class="token tag"><span class="token tag"></span><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;<span class="token punctuation"></span></span></span></span></span>Passwords cannot include the highlighted symbols. Please use only !@#$_-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+	<span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
 <span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
 </code></pre>
 
-							<label for="">Password</label>
-							<div class="myAccount-password error">
-								<input type="password" id="" class="input-myAccount-password" password-shown="false">
-								<button class="secondary-button" type="button">Show</button>
-								<p>Passwords cannot include the highlighted symbols. Please use only !@#$_-</p>
+							<div class="myAccount-form-error">
+								<label for="">Password</label>
+								<div class="myAccount-password">
+									<input type="password" id="" class="input-myAccount-password" password-shown="false">
+									<button class="secondary-button" type="button">Show</button>
+									<p>Passwords cannot include the highlighted symbols. Please use only !@#$_-</p>
+								</div>
 							</div>
 
 						</article>
@@ -388,25 +401,31 @@
 <hr></hr>
 
 <!--********* ALERTs -->
-							<section id="alerts">
+							<section id="messages">
 								<article>
-									<h2 class="sg">Alerts</h2>
-									<p class="sg">Alerts provide page level feedback to myAccount users.</p>
+									<h2 class="sg">Banner Messages</h2>
+									<p class="sg">Banner Messages provide specific feedback to myAccount users. They are "dissmisible" by including both the<code>close</code> class and <code>onclick</code> event.</p>
 
-<pre class=" language-html"><code class=" language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>myAccount-alert<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
-	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>myAccount-message<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<pre class=" language-html"><code class=" language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>myAccount-message<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>myAccount-message-text<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
 		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>Sorry we are unable to submit your information due to an internal error. Lorem ipsum dolor sit amet, con sac d scv sectetur adipiscing elit, sed do eiusmod tempor incididunt.<span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
 		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.<span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
-		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>close<span class="token punctuation">"</span></span> <span class="token attr-name">onclick</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>this.parentElement.style.display='none';<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>message-controls<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+			<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">""</span></span><span class="token punctuation">&gt;</span></span>Undo<span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+			<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>close<span class="token punctuation">"</span></span> <span class="token attr-name">onclick</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>this.parentElement.parentElement.style.display='none';<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+		<span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
 	<span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
 <span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
 
-							<div class="myAccount-alert">
-								<div class="myAccount-message">
+							<div class="myAccount-message">
+								<div class="myAccount-message-text">
 									<p>Sorry we  are unable to submit your information due to an internal error. Lorem ipsum dolor sit amet, con sac d scv sectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
 									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
 								</div>
-								<div class="close" onclick="this.parentElement.style.display='none';"></div>
+								<div class="message-controls">
+									<a href="">Undo</a>
+									<div class="close" onclick="this.parentElement.parentElement.style.display='none';"></div>
+								</div>
 							</div>
 
 						</article>
