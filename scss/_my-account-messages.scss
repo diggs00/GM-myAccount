@@ -65,5 +65,22 @@
 
 
 
+.myAccount-message.error {
+	border: 1px solid $color-red;
+	background-color: rgba( $color-red, .1 );
+	span.icon {
+		color: $color-red;
+	}
+	.myAccount-message-text {
+		flex-basis: 100%;
+		p {
+			color: $color-red;
+		}
+	}
+}
+
+
+
+
 
 
