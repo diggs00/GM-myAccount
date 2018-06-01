@@ -2,14 +2,18 @@
 	padding:20px;
 	border: 1px solid $color-green;
 	background-color: rgba( $color-green, .1 );
-	display: inline-flex;
+	display: flex;
 	span.icon {
 		flex-basis: 5%;
 		color: $color-green;
 		font-size: $font-size-xlarge;
+		margin-right: 10px;
 	}
 	.myAccount-message-text {
-			flex-basis: 85%;
+			flex-basis: 75%;
+			@media screen and (min-width: $break-desktop) {
+				flex-basis: 85%;
+			}
 		p {
 			color: $color-green;
 			margin-bottom: 10px;
