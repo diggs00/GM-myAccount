@@ -312,5 +312,19 @@ ul.myAccount-password-instruction {
 
 
 
+.myAccount-form-search {
+	display: flex;
+	margin-bottom: 20px;
+	[type=search] {
+		flex-basis: 100%;
+		margin-right: 20px;
+		margin-bottom: 0px;
+	}
+	[type=submit], button {
+		flex-basis: 25%;
+		margin-bottom: 0px;
+	}
+}
+
 
 

@@ -59,6 +59,7 @@
 							<ul class="fa-ul">
 								<li><a href="#type" class="sg"><span class="fa-li"><i class="fas fa-font"></i></span>Typography</a></li>
 								<li><a href="#buttons" class="sg"><span class="fa-li"><i class="fas fa-hand-point-up"></i></span>Buttons</a></li>
+								<li><a href="#tabs" class="sg"><span class="fa-li"><i class="fas fa-tags"></i></span>Tabs</a></li>
 								<li><a href="#forms" class="sg"><span class="fa-li"><i class="fas fa-check-square"></i></span>Forms</a></li>
 								<li><a href="#messages" class="sg"><span class="fa-li"><i class="fas fa-exclamation-circle"></i></span>Messages</a></li>
 								<li><a href="#layout" class="sg"><span class="fa-li"><i class="fas fa-th-large"></i></span>Layout</a></li>
@@ -214,6 +215,62 @@
 
 					</section>
 <!--********* BUTTONS-END ////////////-->
+
+
+
+<hr></hr>
+
+
+<!--********* TABS -->
+							<section id="tabs">
+								<article>
+									<h2 class="sg">Tabs</h2>
+									<p class="sg">Use tabs to alternate between views within the same context, not to navigate to different areas.</p>
+
+<pre class=" language-html"><code class=" language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>myAccount-tab-container<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span></span></span></span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>radio<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>state<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>tab-one<span class="token punctuation">"</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>tabs-state<span class="token punctuation">"</span> checked </span><span class="token attr-value"><span class="token punctuation"></span></span></span><span class="token punctuation">/&gt;</span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>radio<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>state<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>tab-two<span class="token punctuation">"</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>tabs-state<span class="token punctuation">"</span></span><span class="token attr-value"><span class="token punctuation"></span></span></span><span class="token punctuation"> /&gt;</span>
+
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>myAccount-tabs<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span></span></span></span></span>
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label <span class="token attr-name">for</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>tab-one<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>tab-one-label<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>tab<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span></span></span>Tab One<span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">&gt;</span></span>
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label <span class="token attr-name">for</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>tab-two<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>tab-two-label<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>tab<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span></span></span>Tab Two<span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">&gt;</span></span>
+
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>tab-one-content<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>panel active<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span></span></span></span></span>
+			<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p<span class="token punctuation">&gt;</span></span></span></span></span></span>Tab One Content<span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+		<span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>tab-two-content<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>panel<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span></span></span></span></span>
+			<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p<span class="token punctuation">&gt;</span></span></span></span></span></span>Tab Two Content<span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+		<span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+	<span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
+
+							<div class="myAccount-tab-container">
+							  
+							    <input class="state" type="radio" name="tabs-state" id="tab-one" checked />
+							    <input class="state" type="radio" name="tabs-state" id="tab-two" />
+
+							    <div class="myAccount-tabs">
+							        <label for="tab-one" id="tab-one-label" class="tab">Tab One</label>
+							        <label for="tab-two" id="tab-two-label" class="tab">Tab Two</label>
+
+							        <div id="tab-one-content" class="panel active">
+							          <p>Tab One Content</p>
+							        </div>
+							        <div id="tab-two-content" class="panel">
+							          <p>Tab Two Content</p>
+							        </div>
+							     
+							    </div>
+
+							</div>
+
+						</article>
+
+
+
+					</section>
+<!--********* TABS-END ////////////-->
+
 
 <hr></hr>
 
@@ -398,7 +455,38 @@
 
 						</article>
 
+
+
+
+
+						<article>
+							<h2 class="sg">Form Search</h2>
+							<p class="sg">Adding an <code>myAccount-form-search</code> class to containing <code>div</code>.</p>
+
+<pre class=" language-html"><code class=" language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>myAccount-search<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span></span></span></span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label <span class="token attr-name">for</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span></span></span>VIN<span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">&gt;</span></span>
+	<span class="token tag"><span class="token tag"></span><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;<span class="token punctuation"></span></span></span></span></span>Only last 8 characters required<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>myAccount-form-search<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span></span></span></span></span>
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>search<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span><span class="token attr-value"><span class="token punctuation"></span></span></span><span class="token punctuation">&gt;</span>
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>submit<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span><span class="token attr-value"><span class="token punctuation"></span></span></span><span class="token punctuation">&gt;</span>
+	<span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
+							
+
+							<div class="myAccount-search">
+								<label for="">VIN</label>
+								<p>Only last 8 characters required</p>
+								<div class="myAccount-form-search">
+									<input type="search" id="" name="">
+									<input type="submit" id="" name="" value="Search">
+								</div>
+							</div>
+
+						</article>
+
 					</section>
+
+
 <!--********* FORMS-END ////////////-->
 
 
