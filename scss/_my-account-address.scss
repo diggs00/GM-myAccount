@@ -12,3 +12,23 @@
 	}
 
 }
+
+
+.myAccount-address-item {
+	display: flex;
+	align-items: flex-start;
+	.myAccount-address {
+		flex-basis:50%;
+	}
+	ul.myAccount-address-item-tools {
+		margin-left: auto;
+		li {
+			display: inline;
+		}
+		li + li::before {
+			content: " | ";
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+	}
+}
